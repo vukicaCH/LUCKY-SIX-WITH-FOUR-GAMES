@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="opis-svega">
+        <h1><span>LUCKY SIX</span> <br> GAMBLING GAMES</h1>
+        <p>To start, scroll down and pick one game to play!</p>
+    </div>
+    <div class="igre">
+        <div class="igra lucky-six-igra">
+            <h1 class='naslov-igre'>LUCKY SIX</h1>
+            <div class="lucky-six">
+                <h3 class='opis-igre'>Enter 6 numbers and amount to invest:</h3>
+             <form class='brojevi-6' name='lucky-six'>
+                 <input type="number" class='number'>
+                 <input type="number" class='number'>
+                 <input type="number" class='number'>
+                 <input type="number" class='number'>
+                 <input type="number" class='number'>
+                 <input type="number" class='number'>
+                 <input type="number" class='novac'>
+                 <button type='submit'>Confirm</button>
+             </form>
+            </div>
+        </div>
+        <div class="igra">
+             <h1 class="naslov-igre">COLOR OF FIRST BALL</h1>
+             <div class="first-ball-color">
+                 <h3 class="opis-igre">Pick one color and enter amount to invest:</h3>
+                 <form class='colors' name='colors'>
+                     <div class='color red' data-color = 'red'></div>
+                     <div class='color green' data-color = 'green'></div>
+                     <div class='color blue' data-color = 'blue'></div>
+                     <div class='color purple' data-color = 'purple'></div>
+                     <div class='color brown' data-color = 'brown'></div>
+                     <div class='color yellow' data-color = 'yellow'></div>
+                     <div class='color orange' data-color = 'orange'></div>
+                     <div class='color black' data-color = 'black'></div>
+                     
+                     <input type="number" class='novac'>
+                     <button type='submit'>Confirm</button>
+                 </form>
+             </div>
+        </div>
+        <div class="igra">
+            <h1 class="naslov-igre">NUMBER IN FIRST FIVE</h1>
+            <div class="number-in-5">
+                <h3 class="opis-igre">Enter one number and amount to invest:</h3>
+                <form class="number-5" name='number-in-5'>
+                    <input type='number' class="single-number">
+                    <input type="number" class='novac'>
+                    <button type='submit'>Confirm</button>
+                </form>
+            </div>
+        </div>
+        <div class="igra">
+            <h1 class="naslov-igre">SUM OF FIRST FIVE BALLS</h1>
+            <div class="sum-5-balls">
+                <h3 class="opis-igre">Pick one of the given options and enter amount to invest:</h3>
+                <form class='sum-of-5' name='sum-of-5'>
+                     <div class="option">Sum will be less than 122.5</div>
+                     <div class="option">Sum will be greater than 122.5</div>
+                     <input type="number" class='novac'>
+                     <button type='submit'>Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="end-of-game">
+            <p></p>
+            <button class="close">PLAY AGAIN?</button>
+        </div>
+        <div class="uplacen-tiket">
+            <p class='igra-naslov'>GAME: </p>
+            <p class='igra-opis'></p>
+            <p class='igra-novac'>AMOUNT: </p>
+        </div>
+        <div class="tabla">
+            <div class="tabla-deo">
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '7' data-puta = '10000'></span>
+                    </div>
+                    <span class="puta">10000</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '8' data-puta = '7500'></span>
+                    </div>
+                    <span class="puta">7500</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '9' data-puta = '5000'></span>
+                    </div>
+                    <span class="puta">5000</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '10' data-puta = '00'></span>
+                    </div>
+                    <span class="puta">2500</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '11' data-puta = '1000'></span>
+                    </div>
+                    <span class="puta">1000</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '12' data-puta = '500'></span>
+                    </div>
+                    <span class="puta">500</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '13' data-puta = '300'></span>
+                    </div>
+                    <span class="puta">300</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '14' data-puta = '200'></span>
+                    </div>
+                    <span class="puta">200</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '15'  data-puta = '150'></span>
+                    </div>
+                    <span class="puta">150</span>
+                </div>
+            </div>
+            <div class="tabla-deo-veliki">
+                <div class="velika-kugla">
+                    <div class="kugla-prva">
+                        <span class="broj"  data-index = '1'></span>
+                    </div>
+                    <div class="prve-pet-kugle">
+                        <div class="kugla-5">
+                            <span class="broj" data-index = '2'></span>
+                        </div>
+                        <div class="kugla-5">
+                            <span class="broj" data-index = '3'></span>
+                        </div>
+                        <div class="kugla-5">
+                            <span class="broj" data-index = '4'></span>
+                        </div>
+                        <div class="kugla-5">
+                            <span class="broj" data-index = '5'></span>
+                        </div>
+                        <div class="kugla-5">
+                            <span class="broj" data-index = '6' data-puta = '25000'></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="male-kugle">
+                    <div class="tabla-deo">
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '16' data-puta = '100'></span>
+                            </div>
+                            <span class="puta">100</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '17' data-puta = '90'></span>
+                            </div>
+                            <span class="puta">90</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '18' data-puta = '80'></span>
+                            </div>
+                            <span class="puta">80</span>
+                        </div>
+                    </div>
+                    <div class="tabla-deo">
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '19' data-puta = '70'></span>
+                            </div>
+                            <span class="puta">70</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '20' data-puta = '60'></span>
+                            </div>
+                            <span class="puta">60</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '21' data-puta = '50'></span>
+                            </div>
+                            <span class="puta">50</span>
+                        </div>
+                    </div>
+                    <div class="tabla-deo">
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '22' data-puta = '40'></span>
+                            </div>
+                            <span class="puta">40</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '23' data-puta = '30'></span>
+                            </div>
+                            <span class="puta">30</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '24' data-puta = ''></span>
+                            </div>
+                            <span class="puta">25</span>
+                        </div>
+                    </div>
+                    <div class="tabla-deo">
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '25' data-puta = '20'></span>
+                            </div>
+                            <span class="puta">20</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '26' data-puta = '15'></span>
+                            </div>
+                            <span class="puta">15</span>
+                        </div>
+                        <div class="kugla-puta">
+                            <div class="kugla">
+                                <span class="broj" data-index = '27' data-puta = '10'></span>
+                            </div>
+                            <span class="puta">10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabla-deo">
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '28' data-puta = '9'></span>
+                    </div>
+                    <span class="puta">9</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '29' data-puta = '8'></span>
+                    </div>
+                    <span class="puta">8</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '30' data-puta = '7'></span>
+                    </div>
+                    <span class="puta">7</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '31' data-puta = '6'></span>
+                    </div>
+                    <span class="puta">6</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '32' data-puta = '5'></span>
+                    </div>
+                    <span class="puta">5</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '33' data-puta = '4'></span>
+                    </div>
+                    <span class="puta">4</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '34' data-puta = '3'></span>
+                    </div>
+                    <span class="puta">3</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '35' data-puta = '2'></span>
+                    </div>
+                    <span class="puta">2</span>
+                </div>
+                <div class="kugla-puta">
+                    <div class="kugla">
+                        <span class="broj" data-index = '36' data-puta = '1'></span>
+                    </div>
+                    <span class="puta">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src='main.js'></script>
+
+</body>
+</html>

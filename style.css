@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+}
+
+.opis-svega {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.opis-svega h1 {
+    font-size: 4rem;
+    line-height: 0.8;
+    background: -webkit-linear-gradient(red, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.opis-svega h1 span {
+    font-size: 8rem;
+}
+
+.opis-svega p {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.uplacen-tiket {
+    height: 30%;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uplacen-tiket p {
+    font-size: 15px;
+    margin: 0 20px;
+}
+
+.uplacen-tiket .igra-novac {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.tabla {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: transparent;
+    border: 5px solid rgba(209, 204, 204, 0.4);
+    border-radius: 10px;
+    flex: 5;
+}
+
+.tabla-deo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla-deo .kugla-puta {
+    flex: 1;
+}
+
+.tabla-deo-veliki {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla-deo-veliki .velika-kugla {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 5px solid rgba(209, 204, 204, 0.4);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.tabla-deo-veliki .velika-kugla .kugla-prva {
+    width: 230px;
+    height: 230px;
+    transform: translateX(-100px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 204, 204, 0.4);
+    border: 3px solid rgba(209, 204, 204, 0.4);
+}
+
+.tabla-deo-veliki .velika-kugla .prve-pet-kugle {
+    width: 110px;
+    height: 360px;
+    position: absolute;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tabla-deo-veliki .velika-kugla .prve-pet-kugle .kugla-5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 204, 204, 0.4);
+    border: 3px solid rgba(209, 204, 204, 0.4);
+}
+
+.tabla-deo-veliki .male-kugle {
+    flex: 1;
+    display: flex;
+}
+
+.tabla-deo-veliki .male-kugle .tabla-deo {
+    flex: 1;
+}
+
+.kugla-puta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.kugla-puta .kugla {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 204, 204, 0.4);
+    border: 3px solid rgba(209, 204, 204, 0.4);
+}
+
+.kugla-puta .puta {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+}
+
+.kugla-prva .broj {
+    width: 150px;
+    padding: 50px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+span.broj {
+    background: white;
+    width: 30px;
+    padding: 6px 0;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+.tiket-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+.tiket-div h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.igre {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.igre>.igra {
+    height: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(218, 28, 202, 0.5),
+            rgba(31, 202, 202, 0.87)),
+        url('https://www.nsoft.com/wp-content/uploads/2017/08/NextSix-Feature-Image1.png') center no-repeat;
+    background-size: cover;
+}
+
+
+.naslov-igre {
+    text-align: center;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    background-color: rgba(189, 15, 174, 0.5);
+    color: rgba(31, 202, 202);
+    border-radius: 10px;
+}
+
+.opis-igre {
+    color: white;
+    text-align: center;
+    text-shadow: 10px 0px 10px black;
+    font-size: 1.5rem;
+}
+
+.brojevi-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brojevi-6>* {
+    border-radius: 10px;
+    margin: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.number {
+    width: calc(50% - 10px);
+}
+
+.novac {
+    width: calc(100% - 10px);
+    text-align: center;
+}
+
+.brojevi-6 button {
+    width: 40%;
+    margin: 10px auto;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.colors>* {
+    border-radius: 10px;
+    margin: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.color {
+    width: calc(50% - 10px);
+    height: 50px;
+    border: 3px solid white;
+}
+
+.colors button[type='submit'] {
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.black {
+    background-color: black;
+}
+
+
+
+.number-5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.number-5>* {
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+
+.sum-of-5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.option {
+    background-color: gray;
+    width: calc(50% - 10px);
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.option:hover {
+    background-color: rgb(34, 31, 31);
+}
+
+.option-clicked {
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
+
+.sum-of-5>* {
+    border-radius: 10px;
+    margin: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.sum-of-5 .novac {
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+.sum-of-5 button[type='submit'] {
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+.end-of-game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: .2s;
+}
+
+
+.end-of-game p {
+    font-size: 130px;
+    color: white;
+    text-shadow: 10px 0px 10px black;
+}
+
+.end-of-game .close {
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .igre {
+        grid-template-columns: 1fr;
+    }
+}
